@@ -1,0 +1,23 @@
+@import "src/scss/variables";
+
+.loader-container {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+
+	height: 50px;
+	width: 500px;
+}
+
+.loader-bar {
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+}
+
+.loader-status {
+	color: #fff;
+	font-family: $font-ptsans;
+	float: right;
+	font-size: 10px;
+}

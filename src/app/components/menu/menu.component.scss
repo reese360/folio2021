@@ -1,0 +1,83 @@
+@import "src/scss/variables";
+
+.menu-button {
+	position: absolute;
+	top: 5vh;
+	left: 5vw;
+	color: white;
+	z-index: 2;
+}
+
+.menu-grid {
+	cursor: pointer;
+	fill: #cacaca;
+	transition: all 250ms linear;
+}
+
+rect {
+	transition: all 250ms $cubic-bezier-timing;
+}
+
+.open {
+	transform: rotate(360deg);
+
+	rect {
+		fill: $bg-color1;
+	}
+
+	rect:nth-child(2),
+	rect:nth-child(4),
+	rect:nth-child(6),
+	rect:nth-child(8) {
+		opacity: 0;
+	}
+}
+
+.menu-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	transition: width 500ms ease-out;
+	overflow: hidden;
+	background-color: #cacaca;
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 500ms $cubic-bezier-timing;
+
+	// clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.overlay-open {
+	visibility: visible;
+	display: block;
+	opacity: 1;
+}
+
+.overlay-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.nav-links {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay-contact {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	list-style: none;
+	cursor: pointer;
+}
