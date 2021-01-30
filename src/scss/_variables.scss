@@ -1,0 +1,26 @@
+// font family
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;400&display=swap");
+$font-secondary: "JetBrains Mono", monospace;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+$font-primary: "Ubuntu", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+$font-handwriting: "Architects Daughter", cursive;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+$font-montserrat: "Montserrat", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+$font-ptsans: "PT Sans", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$font-roboto: "Roboto", sans-serif;
+
+$bg-color1: #222222;
+$bg-color2: #1b1b1b;
+
+$color-headline1: #f9f9f9;
+$color-headline2: #747474;
+
+// standard cubic bezier timing function
+$cubic-bezier-timing: cubic-bezier(0.86, 0, 0.07, 1);

@@ -53,9 +53,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/scss/styles.scss"
             ],
-            "scripts": []
+			"scripts": ["src/assets/js/butter.js"]
           },
           "configurations": {
             "production": {
@@ -116,7 +116,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/scss/styles.scss"
             ],
             "scripts": []
           }
