@@ -2,25 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;400&display=swap");
 $font-secondary: "JetBrains Mono", monospace;
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-$font-primary: "Ubuntu", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+$font-ubuntu: "Ubuntu", sans-serif;
 
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 $font-handwriting: "Architects Daughter", cursive;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&display=swap");
 $font-montserrat: "Montserrat", sans-serif;
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 $font-ptsans: "PT Sans", sans-serif;
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $font-roboto: "Roboto", sans-serif;
 
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+$font-anton: "Anton", sans-serif;
+
 $bg-color1: #222222;
 $bg-color2: #1b1b1b;
+$bg-light: #e0dfe0;
 
-$color-headline1: #f9f9f9;
+$color-headline1: #d3d3d3;
 $color-headline2: #747474;
+
+$color-text-1: #393939;
+
+$color-theme1: #d14058;
 
 // standard cubic bezier timing function
 $cubic-bezier-timing: cubic-bezier(0.86, 0, 0.07, 1);

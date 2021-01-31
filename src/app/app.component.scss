@@ -9,6 +9,19 @@
 
 .app-container {
 	position: relative;
-	background: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(55, 55, 55, 1) 69%, rgba(34, 34, 34, 1) 100%);
+	background: $bg-light;
+	// background: #e7e7e7;
+
 	overflow-x: hidden;
+	cursor: none !important;
+}
+
+.cursor {
+	stroke: red;
+	fill: none;
+	stroke-width: 2px;
+	position: absolute;
+	z-index: 9999;
+	pointer-events: none;
+	user-select: none;
 }

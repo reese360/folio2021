@@ -4,13 +4,12 @@
 	position: absolute;
 	top: 5vh;
 	left: 5vw;
-	color: white;
 	z-index: 2;
 }
 
 .menu-grid {
-	cursor: pointer;
-	fill: #cacaca;
+	// cursor: pointer;
+	fill: $color-theme1;
 	transition: all 250ms linear;
 }
 

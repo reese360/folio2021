@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 declare const butter: any;
 @Component({
 	selector: 'app-root',
@@ -6,10 +6,16 @@ declare const butter: any;
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+	@ViewChild('cursor') cursorBlock!: ElementRef;
 	ngOnInit() {
 		butter.init({
-			wrapperId: 'inertiaScroller',
+			wrapperId: 'inertiaScroll',
 			wrapperDamper: 0.05,
 		});
+	}
+
+	@HostListener('document:mousemove', ['$event']) onMouseMove(e: MouseEvent) {
+		this.cursorBlock.nativeElement.style.left = `${e.clientX - 5}px`;
+		this.cursorBlock.nativeElement.style.top = `${e.clientY - 5}px`;
 	}
 }

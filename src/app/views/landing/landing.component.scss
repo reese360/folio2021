@@ -5,9 +5,44 @@
 	height: 100vh;
 	width: 100vw;
 	padding: 0;
-	display: grid;
-	grid-template-columns: auto auto;
 	overflow: hidden;
+}
+
+.landing-content {
+	padding: 2vh;
+}
+
+.landing-bold {
+	color: $color-text-1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7.5vmax;
+	letter-spacing: -0.015em;
+	font-weight: 700;
+	line-height: 80%;
+	// -webkit-text-stroke: 1px black;
+	// -webkit-text-fill-color: #e7e7e7;
+	// background: blue;
+	// background-clip: text;
+	// color: transparent;
+}
+
+.subtext {
+	color: $color-text-1;
+	padding-top: 0.5vh;
+	font-size: 1.25vmax;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.015em;
+}
+
+.copyright {
+	margin-top: 10px;
+	font-size: larger;
+}
+
+li {
+	list-style: none;
+	padding: 0;
 }
 
 .grid-left {
@@ -17,56 +52,49 @@
 }
 
 .grid-right {
-	// background-color: $bg-color2;
 	display: flex;
 	height: 100%;
 }
 
-.landing-bg-text {
-	display: inline-block;
-	align-self: flex-end;
-	font-family: $font-roboto;
-	text-align: center;
-	width: 100%;
-	line-height: 80%;
-	user-select: none;
-}
-
-.text-left {
-	color: $bg-color2;
-	font-size: 18vw;
-}
-.text-right {
-	color: $bg-color1;
-	font-size: 18vw;
-}
-
 .landing-intro {
-	font-family: $font-montserrat;
 	position: absolute;
 	top: 40%;
 	left: 60%;
 }
 
-.landing-headline-primary {
-	font-size: 36px;
-	color: $color-headline1;
-	font-weight: 500;
-
-	.headline2 {
-		padding-left: 35px;
-	}
+.headline {
+	font-family: $font-montserrat;
+	color: $color-headline2;
 }
 
-.landing-headline-secondary {
+.line-1 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.line-2 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.line-3 {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.line-4 {
+	padding-left: 35px;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.line-5 {
 	font-size: 16px;
-	color: $color-headline2;
 	padding: 10px;
 }
 
-li {
-	list-style: none;
-	color: $color-headline2;
-	font-family: $font-ptsans;
-	font-size: 16px;
+.name {
+	font-size: 30px;
+	font-weight: 500;
+	color: $color-theme1;
 }
